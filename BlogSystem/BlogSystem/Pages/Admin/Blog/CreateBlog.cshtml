@@ -1,0 +1,18 @@
+﻿@page
+@model BlogSystem.Pages.CreateBlogModel
+@{
+}
+
+<form method="post">
+    <div>
+        <label asp-for="Blog.Title"></label>
+        <input asp-for="Blog.Title" />
+        <span asp-validation-for="Blog.Title"></span>
+    </div>
+    <div>
+        <label asp-for="Blog.Author"></label>
+        <select asp-for="Blog.Author" asp-items="Model.AuthorList"></select>
+        <span asp-validation-for="Blog.Author"></span>
+    </div>
+    <input type="submit" value="Submit" />
+</form>

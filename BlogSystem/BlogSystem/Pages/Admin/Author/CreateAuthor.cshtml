@@ -1,0 +1,53 @@
+﻿@page
+@model BlogSystem.Pages.CreateAuthorModel
+@{
+}
+
+<form method="post">
+    <div>
+        <label asp-for="Author.GivenName"></label>
+        <input asp-for="Author.GivenName" />
+        <span asp-validation-for="Author.GivenName"></span>
+    </div>
+    <div>
+        <label asp-for="Author.LastName"></label>
+        <input asp-for="Author.LastName" />
+        <span asp-validation-for="Author.LastName"></span>
+    </div>
+    <div>
+        <label asp-for="Author.Birthdate"></label>
+        <input asp-for="Author.Birthdate" />
+        <span asp-validation-for="Author.Birthdate"></span>
+    </div>
+    <div>
+        <label asp-for="Author.EmailAddress"></label>
+        <input asp-for="Author.EmailAddress" />
+        <span asp-validation-for="Author.EmailAddress"></span>
+    </div>
+    <div>
+        <label asp-for="Author.WebsiteAddress"></label>
+        <input asp-for="Author.WebsiteAddress" />
+        <span asp-validation-for="Author.WebsiteAddress"></span>
+    </div>
+    <div>
+        <label asp-for="Author.PhoneNumber"></label>
+        <input asp-for="Author.PhoneNumber" />
+        <span asp-validation-for="Author.PhoneNumber"></span>
+    </div>
+    <div>
+        <label asp-for="Author.Country"></label>
+        <input asp-for="Author.Country" />
+        <span asp-validation-for="Author.Country"></span>
+    </div>
+    <div>
+        <label asp-for="Author.Province"></label>
+        <input asp-for="Author.Province" />
+        <span asp-validation-for="Author.Province"></span>
+    </div>
+    <div>
+        <label asp-for="Author.PostalCode"></label>
+        <input asp-for="Author.PostalCode" />
+        <span asp-validation-for="Author.PostalCode"></span>
+    </div>
+    <input type="submit" value="Submit" />
+</form>
