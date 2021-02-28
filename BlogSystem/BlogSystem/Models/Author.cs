@@ -35,5 +35,7 @@ namespace BlogSystem.Models
 
         [DataType(DataType.PostalCode)]
         public string PostalCode { get; set; }
+
+
     }
 }

@@ -10,9 +10,10 @@
         <span asp-validation-for="Blog.Title"></span>
     </div>
     <div>
-        <label asp-for="Blog.Author"></label>
-        <select asp-for="Blog.Author" asp-items="Model.AuthorList"></select>
-        <span asp-validation-for="Blog.Author"></span>
+        <label asp-for="Blog.Author.GivenName"></label>
+        <select asp-for="Blog.Author.GivenName" asp-items="Model.AuthorList"></select>
+        <span asp-validation-for="Blog.Author.GivenName"></span>
+
     </div>
     <input type="submit" value="Submit" />
 </form>

@@ -11,14 +11,12 @@ namespace BlogSystem.Pages
 {
     public class CreateBlogModel : PageModel
     {
-        [FromForm]
-        public Blog Blog { get; set; } = new Blog();
 
         private List<Author> Authors { get; set; } = new List<Author>();
 
-        public IEnumerable<SelectListItem> AuthorList { get; private set; }
-        public string GivenName { get; private set; }
-        public string Email { get; private set; }
+        public IEnumerable<SelectListItem> AuthorList { get;private set; }
+        public string GivenName { get;private set; }
+        public string Email { get;private set; }
 
 
         public CreateBlogModel()
@@ -64,22 +62,32 @@ namespace BlogSystem.Pages
             Authors.Add(a);
             Authors.Add(b);
             Authors.Add(c);
-
+    
         }
+      
         public void OnGet()
         {
+        
             List<SelectListItem> list = new List<SelectListItem>();
+
 
             foreach (var auth in Authors)
             {
-                list.Add(new SelectListItem(auth.GivenName, auth.EmailAddress));
+                list.Add(new SelectListItem(auth.GivenName, auth.GivenName));
             }
-
             AuthorList = list;
+            
         }
 
         public void OnPost()
-        {
-        }
+         {
+
+         }
+
+        [FromForm]
+        public Blog Blog { get; set; } = new Blog();
+
+
+
     }
 }

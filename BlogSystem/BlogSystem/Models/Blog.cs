@@ -17,5 +17,6 @@ namespace BlogSystem.Models
 
         [DataType(DataType.Date)]
         public string PublishDate { get; set; }
+
     }
 }

@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BlogSystem",
+    "\\BlogSystem\\Pages",
+    "\\BlogSystem\\Pages\\Admin",
+    "\\BlogSystem\\Pages\\Admin\\Blog"
   ],
-  "SelectedNode": "\\BlogSystem.sln",
+  "SelectedNode": "\\BlogSystem\\Pages\\Admin\\Blog\\CreateBlog.cshtml",
   "PreviewInSolutionExplorer": false
 }
